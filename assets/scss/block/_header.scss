@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 44px;
+
+    &-menu {
+        display: none;
+    }
+
+    &-title {
+        display: flex;
+        gap: 50px;
+
+        li a {
+            font-family: Barlow;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 125%;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #83888f;
+        }
+
+        li a:hover {
+            color: black;
+        }
+    }
+}
+
+@media (max-width:650px) {
+    .header {
+        &-title {
+            display: none;
+        }
+
+        &-menu {
+            display: block;
+
+            i {
+                font-size: 30px;
+            }
+        }
+    }
+}

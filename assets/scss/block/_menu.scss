@@ -1,0 +1,42 @@
+.header {
+  position: relative;
+}
+.menu_responsiv {
+  //   display: none;
+  transform: translateX(-100%);
+  ul {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .menu_responsiv {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(34, 30, 38, 0.671);
+    height: 100vh;
+    top: 0;
+  }
+  .header-menu {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+  }
+  .menu_responsiv ul {
+    display: block;
+    margin-top: 20px;
+    li {
+      margin-top: 50px;
+      margin-left: 50px;
+      a {
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    }
+  }
+}
+.hide {
+  transform: translateX(0px);
+  transition: 0.7s;
+}
